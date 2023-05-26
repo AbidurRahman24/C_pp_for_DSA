@@ -1,11 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
-class Student{
+class Person{
     public:
         char name[100];
         float height;
         int age;
-        Student(char *n, float h, int a)
+        Person(char *n, float h, int a)
         {
             strcpy(name,n);
             height= h;
@@ -14,9 +14,9 @@ class Student{
 };
 int main()
 {
-    Student* rahim = new Student("Rahim Uddin", 55.32, 22);
-    // cout<<rahim->name<<endl;
-    // cout<<rahim->height<<endl;
-    // cout<<rahim->age<<endl;
+    Person * rahim = new Person("Rahim Uddin", 55.32, 22);
+    cout<<rahim->name<<endl;
+    cout<<rahim->height<<endl;
+    cout<<rahim->age<<endl;
     return 0;
 }

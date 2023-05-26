@@ -16,12 +16,19 @@ class Student
             strcpy(name,n);
         }
 };
+Student fun()
+{
+    char name[100]="Rahim Ullah";
+    Student r(29,'C',7,name);
+    return r;
+}
 int main()
 {
-    Student rahim(29,'A',7,"Rahim Ullah");
-    Student karim(55,'D',7,"Karim Cholimullah");
-    
-    cout<<karim.roll<<endl;
+    Student rahim=fun();
+
+    cout<<rahim.name<<endl;
     cout<<rahim.roll<<endl;
+    cout<<rahim.section<<endl;
+    cout<<rahim.cls<<endl;
     return 0;
 }

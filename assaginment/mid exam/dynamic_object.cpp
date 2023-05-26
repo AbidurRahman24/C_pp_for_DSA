@@ -18,10 +18,16 @@ class Student
 };
 int main()
 {
-    Student rahim(29,'A',7,"Rahim Ullah");
-    Student karim(55,'D',7,"Karim Cholimullah");
-    
-    cout<<karim.roll<<endl;
-    cout<<rahim.roll<<endl;
+    char name[100]="Rahim Ullah";
+    Student* rahim = new Student(5,'A',11,name);
+
+    // shortcut upay
+    // arrow sign
+    // (*rahim). = rahim->
+
+    cout<<rahim->name<<endl;
+    cout<<rahim->roll<<endl;
+    cout<<rahim->section<<endl;
+    cout<<rahim->cls<<endl;
     return 0;
 }
